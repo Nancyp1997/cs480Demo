@@ -466,6 +466,10 @@ async function dummyChart() {
 			scales: {
 				xAxes: [{
 				  type: 'time',
+				  ticks: {
+					fontColor: "white",
+					
+				   },
 				  time: {
 					displayFormats: {
 						'millisecond': 'MMM DD',
@@ -480,6 +484,12 @@ async function dummyChart() {
 					}
 				  }
 				}],
+				yAxes: [{
+					ticks: {
+						fontColor: "white",
+						
+					   },
+				}]
 			  },
 
 		}
@@ -707,6 +717,10 @@ async function realTimeChart() {
 			scales: {
 				xAxes: [ {
 					type: 'time',
+					ticks: {
+						fontColor: "white",
+					
+					},
 					time: {
 						displayFormats: {
 							'millisecond': 'MMM DD',
@@ -732,7 +746,13 @@ async function realTimeChart() {
                         } ],
 				yAxes: [ {
 					display: true,
+					ticks: {
+						fontColor: "white",
+					
+					},
+					grid: {borderColor: "white",color:'white'},
 					gridLines: {
+						borderColor: "white",
 						display: false,
 						drawBorder: false
 					},
